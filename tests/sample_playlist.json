@@ -1,0 +1,28 @@
+{
+  "playlistId": "test-playlist-001",
+  "version": "1.0.0",
+  "lastUpdated": "2026-01-02T10:30:00Z",
+  "items": [
+    {
+      "id": "item-1",
+      "type": "photo",
+      "url": "https://picsum.photos/1920/1080?random=1",
+      "duration": 5,
+      "order": 1
+    },
+    {
+      "id": "item-2",
+      "type": "photo",
+      "url": "https://picsum.photos/1920/1080?random=2",
+      "duration": 7,
+      "order": 2
+    },
+    {
+      "id": "item-3",
+      "type": "photo",
+      "url": "https://picsum.photos/1920/1080?random=3",
+      "duration": 10,
+      "order": 3
+    }
+  ]
+}

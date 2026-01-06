@@ -1,0 +1,67 @@
+{
+  "playlistId": "test-playlist-001",
+  "version": 1,
+  "lastUpdated": "2026-01-02T00:00:00Z",
+  "items": [
+    {
+      "id": "item-001",
+      "type": "photo",
+      "path": "test-media/caled.jpg",
+      "duration": 3,
+      "order": 1
+    },
+    {
+      "id": "item-002",
+      "type": "video",
+      "path": "test-media/3189083.mp4",
+      "order": 2
+    },
+    {
+      "id": "item-003",
+      "type": "photo",
+      "path": "test-media/hd-op.webp",
+      "duration": 3,
+      "order": 3
+    },
+    {
+      "id": "item-004",
+      "type": "video",
+      "path": "test-media/351050.mov",
+      "order": 4
+    },
+    {
+      "id": "item-005",
+      "type": "photo",
+      "path": "test-media/istockphoto-1164081731-612x612.jpg",
+      "duration": 3,
+      "order": 5
+    },
+    {
+      "id": "item-006",
+      "type": "video",
+      "path": "test-media/dpp_is.mp4",
+      "order": 6
+    },
+    {
+      "id": "item-007",
+      "type": "photo",
+      "path": "test-media/istockphoto-517188688-612x612.jpg",
+      "duration": 3,
+      "order": 7
+    },
+    {
+      "id": "item-008",
+      "type": "photo",
+      "path": "test-media/lowing-by-warm.jpg",
+      "duration": 3,
+      "order": 8
+    },
+    {
+      "id": "item-009",
+      "type": "photo",
+      "path": "test-media/tumn-sunrise-in-the.jpg",
+      "duration": 3,
+      "order": 9
+    }
+  ]
+}
