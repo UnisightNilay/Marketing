@@ -24,12 +24,6 @@
       "order": 3
     },
     {
-      "id": "item-004",
-      "type": "video",
-      "path": "test-media/351050.mov",
-      "order": 4
-    },
-    {
       "id": "item-005",
       "type": "photo",
       "path": "test-media/istockphoto-1164081731-612x612.jpg",

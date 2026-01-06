@@ -39,11 +39,14 @@ logs/
 
 # Media Cache
 media-cache/
-test-media/
+
+# Large media files (videos)
 *.mp4
 *.avi
 *.mkv
 *.mov
+
+# Image files (except in Assets and test-media)
 *.jpg
 *.jpeg
 *.png
@@ -51,6 +54,10 @@ test-media/
 *.gif
 *.tiff
 *.bmp
+
+# Allow assets and test-media
+!Assets/**
+!test-media/**
 
 # Configuration (if containing secrets)
 config.local.py
