@@ -1,0 +1,53 @@
+---
+alwaysApply: true
+---
+
+# Changelog Documentation Rule
+
+## Requirements
+Whenever changes are made to the codebase, you MUST document them with the following information:
+
+### 1. Change Description
+- Provide a detailed description of what was changed
+- Include the purpose and reasoning behind the change
+- List all files that were modified, created, or deleted
+- Describe the impact of the changes on the system
+
+### 2. Git Information
+- **Git Branch**: Specify the branch where changes were made
+- **Git Commit**: Include the commit hash/ID after committing changes
+- If changes haven't been committed yet, note that they are pending commit
+
+### 3. Documentation Format
+Structure changelog entries as follows:
+
+```
+## [Date] - [Brief Title]
+
+### Description
+[Detailed description of changes]
+
+### Files Changed
+- `path/to/file1.ext` - [what was changed]
+- `path/to/file2.ext` - [what was changed]
+
+### Git Information
+- **Branch**: [branch-name]
+- **Commit**: [commit-hash]
+
+### Impact
+[Description of how this affects the system]
+```
+
+### 4. When to Document
+- After implementing new features
+- After fixing bugs
+- After refactoring code
+- After updating dependencies
+- After configuration changes
+- Any other significant code modifications
+
+### 5. Location
+- Document changes in `CHANGELOG.md` at the project root
+- If `CHANGELOG.md` doesn't exist, create it
+- Keep entries in reverse chronological order (newest first)

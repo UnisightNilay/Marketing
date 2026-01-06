@@ -335,14 +335,6 @@ class RegistrationUI(QWidget):
         except Exception as e:
             logger.error(f"Failed to display QR code: {e}")
             self.status_label.setText(f"❌ Error displaying QR code: {e}")
-            
-            # Scale to fit
-            scaled = pixmap.scaled(400, 400, Qt.KeepAspectRatio, Qt.SmoothTransformation)
-            self.qr_label.setPixmap(scaled)
-            
-        except Exception as e:
-            logger.error(f"Failed to display QR code: {e}")
-            self.status_label.setText(f"Error displaying QR code: {e}")
     
     def update_status(self, state: RegistrationState):
         """Update status message"""

@@ -227,10 +227,7 @@ class MarketingDisplayApp:
         
         # Fetch fresh content in background
         # TODO: Uncomment when backend is ready
-        # self.refresh_content()ndow.set_playlist(cached_items)
-        
-        # Fetch fresh content in background
-        self.refresh_content()
+        # self.refresh_content()
     
     def refresh_content(self, action='refresh', message=None):
         """Refresh content from backend"""
@@ -253,9 +250,10 @@ class MarketingDisplayApp:
         cache_file = os.path.join(Config.CACHE_DIR, 'playlist_cache.json')
         self.playlist_manager.save_playlist_cache(cache_file)
     
-    def start_signalr(self):
+    def start_signalr(self, api_key: str = None):
         """Start SignalR client for real-time updates"""
         try:
+            # TODO: Add API key authentication when backend supports it
             self.signalr_client = SignalRClient(on_playlist_updated=self.on_signalr_update)
             self.signalr_client.start()
             logger.info("SignalR client started")

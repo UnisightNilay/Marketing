@@ -37,16 +37,17 @@ ENV/
 *.log
 logs/
 
+# Cache & Temporary Files
+*.cache
+playlist_cache.json
+
 # Media Cache
 media-cache/
-
-# Large media files (videos)
+test-media/
 *.mp4
 *.avi
 *.mkv
 *.mov
-
-# Image files (except in Assets and test-media)
 *.jpg
 *.jpeg
 *.png
@@ -55,15 +56,20 @@ media-cache/
 *.tiff
 *.bmp
 
-# Allow assets and test-media
-!Assets/**
-!test-media/**
-
 # Configuration (if containing secrets)
 config.local.py
-.env
-.env.*
-!.env.example
+
+# Environment files (DO track .env.development, .env.staging, .env.production)
+# Only ignore .env (local overrides)
+.env.local
+.env.*.local
+
+# Device Registration & Credentials (NEVER commit these!)
+Config/registration.json
+Config/branchInfo.json
+
+# Keep Config directory structure
+!Config/.gitkeep
 
 # OS
 .DS_Store
